@@ -1,0 +1,251 @@
+body {
+    font-family: RoadRadio, sans-serif;
+    background-color: var(--color-sub);
+    color: white;
+    background-color: rgb(13, 17, 23);
+}
+h1 {
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    animation: 0.7s swashIn ease;
+}
+h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+    animation: 0.7s swashIn ease;
+}
+h3 {
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    animation: 0.7s swashIn ease;
+}
+h4 {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    animation: 0.7s swashIn ease;
+}
+p {
+    font-size: 25px;
+    animation: 0.7s show ease;
+}
+
+#welcome {
+    animation: 2s show ease;
+    padding: 35px;
+    margin: 5px;
+    background-color: rgb(13, 17, 23);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: var(--padding-section);
+    unicode-bidi: isolate;
+    min-height: 35svh;
+}
+
+#portfolio {
+    background-color: rgb(117, 77, 212);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding: var(--padding-section);
+    overflow: hidden;
+    unicode-bidi: isolate;
+    color: rgb(13, 17, 23);
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    min-height: 30svh;
+}
+#portfolio h2{
+    padding-top: 35px;
+}
+#portfolio h2, h4, h1, p, div{
+    padding-left: 20px;
+}
+
+span {
+    display: block;
+    opacity: 0.6;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    text-transform: initial;
+    margin-top: 4px;
+}
+
+a {
+    font-family: Gilroy, sans-serif;
+    background-color: rgb(13, 17, 23);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0.01rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 400px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.portfolio {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: 0.5s vanishIn ease;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+    transform: perspective(800px) rotateX(-90deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+    transform: perspective(800px) rotateX(50deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+@keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+    transform: perspective(800px) rotateX(-90deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+    transform: perspective(800px) rotateX(50deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+
+#skills {
+    -webkit-animation-name: boingInUp;
+    animation: 0.7s boingInUp ease;
+}
+
+
+@-webkit-keyframes swashIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+.vanishIn {
+  animation-name: vanishIn;
+}
+
+@-webkit-keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
